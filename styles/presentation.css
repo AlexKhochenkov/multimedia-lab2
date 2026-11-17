@@ -1,0 +1,58 @@
+.shower { --slide-width:1280px; --slide-ratio:calc(16 / 9); --slide-side:64px; --color-blue:#145b91; --color-red:#145b91; font:26px/1.35 'PT Sans',Arial,sans-serif; }
+.slide { padding:44px 64px 62px; color:#182d42; }
+.slide h2 { margin:0 0 28px; max-width:1060px; font:700 42px/1.12 'PT Sans',Arial,sans-serif; color:#124b78; }
+.slide h3 { margin:0 0 12px; font-size:27px; line-height:1.2; }
+.slide::after { left:auto; right:28px; width:48px; height:64px; padding-top:8px; font-size:22px; }
+.slide .author { position:absolute; left:64px; right:64px; bottom:16px; border-top:1px solid #c7d2dd; padding-top:10px; font-size:15px; line-height:1.25; color:#41566b; }
+.slide p { margin:0 0 20px; }
+.slide dl { margin:0; }
+.slide dt { font-weight:700; margin:0 0 5px; }
+.slide dd { margin:0; }
+.slide dl>div { margin-bottom:20px; break-inside:avoid; }
+.title-slide { background:#f4f7fa; padding-top:83px; }
+.title-slide h2 { max-width:850px; font-size:64px; margin-bottom:26px; }
+.title-slide .course { font-size:33px; color:#47728e; margin-bottom:28px; }
+.title-slide .presenter { margin-top:40px; }
+.crest { position:absolute; right:74px; top:168px; width:190px; height:250px; object-fit:contain; }
+.history dl { display:grid; grid-template-columns:1fr 1fr; gap:20px 44px; font-size:21px; }
+.history dl>div { margin:0; }
+.history dt { font-size:23px; }
+.origins-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; padding-top:20px; }
+.origins-grid article h3 { font-size:25px; min-height:60px; }
+.origins-grid img { display:block; width:100%; height:200px; object-fit:contain; margin:15px 0 30px; }
+.origins-grid p { font-size:27px; }
+.split { display:grid; grid-template-columns:1.45fr 1fr; gap:35px; }
+.split dl { font-size:23px; }
+.side-image { width:100%; height:410px; object-fit:cover; }
+.principles dl { column-count:2; column-gap:44px; font-size:23px; }
+.principles dl>div { margin-bottom:22px; }
+.dilemmas dl { display:grid; grid-template-columns:1fr 1fr; gap:34px 50px; padding-top:20px; font-size:26px; }
+.dilemmas dt { margin-bottom:14px; }
+.slide table { margin:0; width:100%; border-collapse:collapse; font-size:21px; line-height:1.28; }
+.slide table caption { text-align:left; font-size:18px; color:#586a7d; padding:0 0 14px; }
+.slide table th,.slide table td { padding:16px 12px; border:1px solid #bdcbd7; background:none; vertical-align:top; }
+.slide table thead th { background:#145b91; color:white; font-weight:700; }
+.slide table tbody tr:nth-child(even) { background:#edf3f8; }
+.slide table th:first-child { width:12%; }
+.slide table th:nth-child(2) { width:24%; }
+.slide table th:nth-child(3) { width:12%; }
+.slide table th:nth-child(4) { width:19%; }
+.slide .source-note { font-size:17px; margin-top:14px; color:#586a7d; }
+.demo { margin:0; }
+.demo img { display:block; width:1066px; height:450px; object-fit:contain; margin:auto; }
+.demo figcaption { font-size:19px; margin-top:13px; color:#41566b; }
+.doctrine { display:flex; justify-content:space-between; gap:50px; align-items:flex-start; }
+.doctrine ul,.doctrine ol { margin:0; padding-left:30px; }
+.doctrine li { margin-bottom:18px; }
+.doctrine>img { width:265px; height:430px; object-fit:contain; }
+.doctrine figure { margin:15px 10px 0; width:280px; flex-shrink:0; }
+.doctrine figure img { width:250px; height:250px; object-fit:contain; }
+.doctrine figcaption { font-size:17px; line-height:1.4; color:#586a7d; margin-top:18px; }
+.conclusion .lead { font-size:30px; color:#145b91; margin-bottom:25px; }
+.conclusion dl { font-size:23px; }
+.conclusion dl>div { margin-bottom:14px; }
+.conclusion .closing { font-size:25px; margin-top:20px; }
+.thanks { background:#eaf1f7; padding-top:180px; }
+.thanks h2 { font-size:68px; }
+.thanks-contact { font-size:30px; line-height:1.6; margin-top:40px!important; }
+@media print { .slide { print-color-adjust:exact; -webkit-print-color-adjust:exact; } }

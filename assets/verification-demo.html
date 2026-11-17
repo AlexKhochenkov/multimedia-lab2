@@ -1,0 +1,10 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;padding:30px 42px;font:24px/1.35 Arial,sans-serif;background:#edf3f8;color:#182d42;width:1066px;height:450px}h1{font-size:25px;margin:0 0 20px;color:#145b91}.label{font-size:16px;text-transform:uppercase;letter-spacing:1px;color:#52677b}p{margin:6px 0 22px}#check{border-top:2px solid #b9cbd9;padding-top:18px}#result{font-weight:bold;color:#145b91}small{position:absolute;bottom:22px;font-size:16px;color:#52677b}
+</style><h1 id="step"></h1><div class="label">Запрос пользователя</div><p>Когда начинается приём заявок на учебный конкурс?</p><div class="label">Ответ ИИ</div><p id="answer"></p><div id="check"><div class="label">Проверка первоисточника</div><p id="source"></p><p id="result"></p></div><small>Условный пример. Даты и конкурс вымышлены.</small><script>
+const states=[
+['1. Получение ответа','Приём заявок начинается 10 марта.','Проверка ещё не выполнена.','Ответ требует проверки.'],
+['2. Проверка источника','Приём заявок начинается 10 марта.','На странице организатора указано: «Приём заявок с 12 марта».','Пользователь сравнивает ответ с первоисточником.'],
+['3. Обнаружение ошибки','Приём заявок начинается 10 марта.','Первоисточник: 12 марта. Ответ ИИ: 10 марта.','Даты не совпадают. В ответе есть ошибка.'],
+['4. Исправление ответа','По информации организатора, приём заявок начинается 12 марта.','Дата подтверждена первоисточником.','Ответ проверен и исправлен человеком.']];
+function show(n){document.querySelector('#step').textContent=states[n][0];document.querySelector('#answer').textContent=states[n][1];document.querySelector('#source').textContent=states[n][2];document.querySelector('#result').textContent=states[n][3]}show(0);
+</script></html>

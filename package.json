@@ -1,0 +1,20 @@
+{
+  "name": "ai-ethics-lab2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ЛР2. Этика в использовании ИИ. Вариант 1",
+  "engines": { "node": ">=22.12" },
+  "files": ["index.html", "styles/**", "assets/**", ".nojekyll"],
+  "scripts": {
+    "start": "shower serve",
+    "prepare": "shower bundle --output prepared",
+    "archive": "shower archive --output archive.zip",
+    "publish": "shower pages"
+  },
+  "dependencies": {
+    "@shower/core": "3.6.0",
+    "@shower/ribbon": "4.2.0"
+  },
+  "devDependencies": { "@shower/cli": "1.1.1" }
+}
