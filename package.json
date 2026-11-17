@@ -7,7 +7,7 @@
   "engines": { "node": ">=22.12" },
   "files": ["index.html", "styles/**", "assets/**", ".nojekyll"],
   "scripts": {
-    "start": "shower serve",
+    "start": "node --dns-result-order=ipv4first node_modules/@shower/cli/bin/cli.js serve",
     "prepare": "shower bundle --output prepared",
     "archive": "shower archive --output archive.zip",
     "publish": "shower pages"
